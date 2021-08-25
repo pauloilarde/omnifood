@@ -7,11 +7,14 @@
 
 - Font weights:
 Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
 
 - Line-heights: 
 Default: 1
-
-
+Small: 1.05
+Paragraph default: 1.6
 
 --- 02 COLORS
 
@@ -29,6 +32,8 @@ Default: 1
 --- 05 SHADOWS
 
 --- 06 BORDER-RADIUS
+
+Default: 9px
 
 --- 07 WHITESPACES
 
@@ -114,6 +119,60 @@ body {
  -----
 */
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/* 
+ -----
+ Navigation
+ -----
+*/
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
 /* 
  -----
  Hero Section
@@ -123,6 +182,7 @@ body {
 .section-hero {
   background-color: #fdf2e9;
   padding: 9.6rem 0;
+  padding-top: 4.8rem;
 }
 
 .hero {
@@ -132,6 +192,7 @@ body {
   gap: 9.6rem;
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 .hero-description {

@@ -166,6 +166,7 @@
 
   .btn-mobile-nav {
     display: block;
+    z-index: 90;
   }
 
   .main-nav-link:link,

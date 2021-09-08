@@ -584,13 +584,14 @@
                 first meal is on us!
               </p>
 
-              <form class="cta-form">
+              <form class="cta-form" name="sign-up" netfly>
                 <div>
                   <label for="fullName">Name</label>
                   <input
                     id="fullName"
                     type="text"
                     placeholder="John Smith"
+                    name="full-name"
                     required
                   />
                 </div>
@@ -601,13 +602,14 @@
                     id="email"
                     type="email"
                     placeholder="john@example.com"
+                    name="email"
                     required
                   />
                 </div>
 
                 <div>
                   <label for="selectWhere">Where did you hear from us?</label>
-                  <select required name="" id="selectWhere">
+                  <select required name="" id="selectWhere" name="selectWhere">
                     <option selected value="" disabled>
                       Please, select one option
                     </option>
